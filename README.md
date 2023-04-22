@@ -1,12 +1,11 @@
 # Team 9
 
 ## App Name
-<h3 style = "font-size: 2rem; font-weight: bold;" <FinanceMent></h3>
+<h3 style = "font-size: 2rem; font-weight: bold;">FinanceMent</h3>
 <br>
-<img src=
 
 ## App Description
-<p FinanceMent is mobile app which will help students manage their day to day expenses. With FinanceMent, students can easily track their spending, set budgets and receive personalized financial advice to make the most of their money.</p>
+<p> FinanceMent is mobile app which will help students manage their day to day expenses. With FinanceMent, students can easily track their spending, set budgets and receive personalized financial advice to make the most of their money.</p>
 
 ## Team Members
 <p align ="center">

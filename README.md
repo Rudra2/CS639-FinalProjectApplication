@@ -3,7 +3,7 @@
 ## App Name
 <h3 style="font-size: 2rem; font-weight:bold;">FinanceMent<h3>
 <br>
-<img src="file:///C:/Users/RITIKA/Downloads/3d24c81d050f4e7c871d4752fbeb5a8c.png">
+<img src="https://logo-maker.freelogodesign.org/en/logo/edit/3d24c81d050f4e7c871d4752fbeb5a8c">
 
 ## Team Members
 <p align="center">

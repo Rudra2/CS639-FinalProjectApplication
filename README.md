@@ -1,4 +1,3 @@
-
 # Team 9
 
 ## App Name

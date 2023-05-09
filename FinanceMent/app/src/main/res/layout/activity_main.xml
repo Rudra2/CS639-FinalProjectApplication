@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <TextView
+        android:textSize="16dp"
+        android:text="Accommodation Expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <EditText
+        android:hint="0"
+        android:inputType="number"
+        android:id="@+id/accommodation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <TextView
+        android:textSize="16dp"
+        android:text="Transportation Expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <EditText
+        android:hint="0"
+        android:inputType="number"
+        android:id="@+id/transportation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+            <TextView
+                android:textSize="16dp"
+                android:text="Food And Groceries Expense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <EditText
+                android:hint="0"
+                android:inputType="number"
+
+                android:id="@+id/food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+
+            <TextView
+                android:textSize="16dp"
+                android:text="Textbook Expense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <EditText
+                android:hint="0"
+                android:inputType="number"
+
+                android:id="@+id/textbook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+
+            <TextView
+                android:textSize="16dp"
+                android:text="Travel Expense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <EditText
+                android:hint="0"
+                android:inputType="number"
+
+                android:id="@+id/travel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+
+            <TextView
+                android:textSize="16dp"
+                android:text="Phone And Internet Expense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <EditText
+                android:hint="0"
+                android:inputType="number"
+
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+
+
+            <TextView
+                android:textSize="16dp"
+                android:text="Entertainment Expense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <EditText
+                android:hint="0"
+                android:inputType="number"
+
+                android:id="@+id/entertainment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+
+
+            <Button
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_gravity="right"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+
+                android:textSize="16dp"
+    android:textColor="#ffffff"
+    android:background="#87CEFA"
+    android:text="Submit"
+    android:id="@+id/submit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"></Button>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

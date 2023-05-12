@@ -17,6 +17,9 @@
 <b>Rudra Chobe</b></sub></a><br/></td>
      <td align="center"><a href="https://github.com/ChougalaRitika"><img src="https://github.com/account" width="100px"; alt=""/></br></sub>
 <b>Ritika Chougala</b></sub></a><br/></td>
+     <td align="center"><a href="https://github.com/nikhilScaleup"><img src="https://avatars.githubusercontent.com/u/64263508?v=4" width="100px"; alt=""/></br></sub>
+<b>Nukhil Bhosle</b></sub></a><br/></td>
+
       </tr>
      </tbody>
     </table>

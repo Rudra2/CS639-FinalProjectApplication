@@ -1,10 +1,12 @@
 package com.example.expenseapp
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.EditText
 import com.github.mikephil.charting.animation.Easing
 import com.github.mikephil.charting.data.PieData
@@ -18,6 +20,10 @@ class GraphActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_graph)
+        var submit=findViewById<Button>(R.id.submit)
+
+        //Fetch and Store expense data to variable
+
         var accommodation=intent.getStringExtra("accommodation")
         var transportation=intent.getStringExtra("transportation")
         var food=intent.getStringExtra("food")
@@ -26,6 +32,7 @@ class GraphActivity : AppCompatActivity() {
         var phone=intent.getStringExtra("phone")
         var entertainment=intent.getStringExtra("entertainment")
 
+        // convert expense data to float
 
         var final_accommodation= if(accommodation.equals("")) 0 else accommodation?.toFloat()
         var final_transportation=if(transportation.equals("")) 0 else transportation?.toFloat()
@@ -34,6 +41,8 @@ class GraphActivity : AppCompatActivity() {
         var final_travel= if(travel.equals("")) 0 else travel?.toFloat()
         var final_phone= if(phone.equals("")) 0 else phone?.toFloat()
         var final_entertainment= if(entertainment.equals("")) 0 else entertainment?.toFloat()
+
+        // set properties to display data in piechart
 
       var  pieChart = findViewById<com.github.mikephil.charting.charts.PieChart>(R.id.pieChart)
         pieChart.setUsePercentValues(true)
@@ -58,7 +67,7 @@ class GraphActivity : AppCompatActivity() {
 
 
 
-
+      // assign data in arraylist
         val expense: ArrayList<PieEntry> = ArrayList()
         expense.add(PieEntry(final_accommodation?.toFloat()!!))
         expense.add(PieEntry(final_transportation?.toFloat()!!))
@@ -73,6 +82,9 @@ class GraphActivity : AppCompatActivity() {
         dataSet.sliceSpace = 3f
         dataSet.iconsOffset = MPPointF(0f, 40f)
         dataSet.selectionShift = 5f
+
+
+        // assign colors in arraylist
 
         val colors: ArrayList<Int> = ArrayList()
         colors.add(resources.getColor(R.color.purple_200))
@@ -96,6 +108,22 @@ class GraphActivity : AppCompatActivity() {
         pieChart.setData(data)
         pieChart.highlightValues(null)
         pieChart.invalidate()
+
+
+        // Open final screen and pass expense data in final screen
+
+        submit.setOnClickListener{
+            val intent = Intent(this@GraphActivity, FinalResult::class.java)
+            intent.putExtra("accommodation", accommodation.toString())
+            intent.putExtra("transportation", transportation.toString())
+            intent.putExtra("food", food.toString())
+            intent.putExtra("textbook",textbook.toString())
+            intent.putExtra("travel", travel.toString())
+            intent.putExtra("phone", phone.toString())
+            intent.putExtra("entertainment", entertainment.toString())
+            startActivity(intent)
+        }
+
 
 
     }

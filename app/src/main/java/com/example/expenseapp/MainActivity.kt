@@ -19,6 +19,8 @@ class MainActivity : AppCompatActivity() {
         var phone=findViewById<EditText>(R.id.phone)
         var entertainment=findViewById<EditText>(R.id.entertainment)
 
+        // Open Graph activity and pass data of expense to Graph activity
+
         submit.setOnClickListener{
             val intent = Intent(this@MainActivity, GraphActivity::class.java)
             intent.putExtra("accommodation", accommodation.text.toString())

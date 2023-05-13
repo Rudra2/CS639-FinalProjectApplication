@@ -1,0 +1,4 @@
+#Fri May 12 22:58:58 IST 2023
+base.0=C\:\\Users\\skind\\Desktop\\ExpenseApp\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

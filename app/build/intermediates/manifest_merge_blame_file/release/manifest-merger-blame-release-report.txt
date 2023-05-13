@@ -1,0 +1,87 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.expenseapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Users\skind\Desktop\ExpenseApp\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\skind\Desktop\ExpenseApp\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->C:\Users\skind\Desktop\ExpenseApp\app\src\main\AndroidManifest.xml:5:5-30:19
+12        android:allowBackup="true"
+12-->C:\Users\skind\Desktop\ExpenseApp\app\src\main\AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.7.0] C:\Users\skind\.gradle\caches\transforms-3\b18147ffaaa38f8cb72464b789131c5e\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+14        android:dataExtractionRules="@xml/data_extraction_rules"
+14-->C:\Users\skind\Desktop\ExpenseApp\app\src\main\AndroidManifest.xml:7:9-65
+15        android:extractNativeLibs="false"
+16        android:fullBackupContent="@xml/backup_rules"
+16-->C:\Users\skind\Desktop\ExpenseApp\app\src\main\AndroidManifest.xml:8:9-54
+17        android:icon="@mipmap/ic_launcher"
+17-->C:\Users\skind\Desktop\ExpenseApp\app\src\main\AndroidManifest.xml:9:9-43
+18        android:label="@string/app_name"
+18-->C:\Users\skind\Desktop\ExpenseApp\app\src\main\AndroidManifest.xml:10:9-41
+19        android:supportsRtl="true"
+19-->C:\Users\skind\Desktop\ExpenseApp\app\src\main\AndroidManifest.xml:11:9-35
+20        android:theme="@style/Theme.ExpenseApp" >
+20-->C:\Users\skind\Desktop\ExpenseApp\app\src\main\AndroidManifest.xml:12:9-48
+21        <activity
+21-->C:\Users\skind\Desktop\ExpenseApp\app\src\main\AndroidManifest.xml:14:9-16:40
+22            android:name="com.example.expenseapp.FinalResult"
+22-->C:\Users\skind\Desktop\ExpenseApp\app\src\main\AndroidManifest.xml:15:13-40
+23            android:exported="false" />
+23-->C:\Users\skind\Desktop\ExpenseApp\app\src\main\AndroidManifest.xml:16:13-37
+24        <activity
+24-->C:\Users\skind\Desktop\ExpenseApp\app\src\main\AndroidManifest.xml:17:9-20:58
+25            android:name="com.example.expenseapp.GraphActivity"
+25-->C:\Users\skind\Desktop\ExpenseApp\app\src\main\AndroidManifest.xml:18:13-42
+26            android:exported="false"
+26-->C:\Users\skind\Desktop\ExpenseApp\app\src\main\AndroidManifest.xml:19:13-37
+27            android:parentActivityName="com.example.expenseapp.MainActivity" />
+27-->C:\Users\skind\Desktop\ExpenseApp\app\src\main\AndroidManifest.xml:20:13-55
+28        <activity
+28-->C:\Users\skind\Desktop\ExpenseApp\app\src\main\AndroidManifest.xml:21:9-29:20
+29            android:name="com.example.expenseapp.MainActivity"
+29-->C:\Users\skind\Desktop\ExpenseApp\app\src\main\AndroidManifest.xml:22:13-41
+30            android:exported="true" >
+30-->C:\Users\skind\Desktop\ExpenseApp\app\src\main\AndroidManifest.xml:23:13-36
+31            <intent-filter>
+31-->C:\Users\skind\Desktop\ExpenseApp\app\src\main\AndroidManifest.xml:24:13-28:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->C:\Users\skind\Desktop\ExpenseApp\app\src\main\AndroidManifest.xml:25:17-69
+32-->C:\Users\skind\Desktop\ExpenseApp\app\src\main\AndroidManifest.xml:25:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->C:\Users\skind\Desktop\ExpenseApp\app\src\main\AndroidManifest.xml:27:17-77
+34-->C:\Users\skind\Desktop\ExpenseApp\app\src\main\AndroidManifest.xml:27:27-74
+35            </intent-filter>
+36        </activity>
+37
+38        <provider
+38-->[androidx.emoji2:emoji2:1.0.0] C:\Users\skind\.gradle\caches\transforms-3\3308a4288448343145479e694265cb34\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+39            android:name="androidx.startup.InitializationProvider"
+39-->[androidx.emoji2:emoji2:1.0.0] C:\Users\skind\.gradle\caches\transforms-3\3308a4288448343145479e694265cb34\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+40            android:authorities="com.example.expenseapp.androidx-startup"
+40-->[androidx.emoji2:emoji2:1.0.0] C:\Users\skind\.gradle\caches\transforms-3\3308a4288448343145479e694265cb34\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+41            android:exported="false" >
+41-->[androidx.emoji2:emoji2:1.0.0] C:\Users\skind\.gradle\caches\transforms-3\3308a4288448343145479e694265cb34\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+42            <meta-data
+42-->[androidx.emoji2:emoji2:1.0.0] C:\Users\skind\.gradle\caches\transforms-3\3308a4288448343145479e694265cb34\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+43                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+43-->[androidx.emoji2:emoji2:1.0.0] C:\Users\skind\.gradle\caches\transforms-3\3308a4288448343145479e694265cb34\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+44                android:value="androidx.startup" />
+44-->[androidx.emoji2:emoji2:1.0.0] C:\Users\skind\.gradle\caches\transforms-3\3308a4288448343145479e694265cb34\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+45            <meta-data
+45-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\skind\.gradle\caches\transforms-3\26e8f02eeacad5d6cb55e4479c80def4\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+46                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+46-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\skind\.gradle\caches\transforms-3\26e8f02eeacad5d6cb55e4479c80def4\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+47                android:value="androidx.startup" />
+47-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\skind\.gradle\caches\transforms-3\26e8f02eeacad5d6cb55e4479c80def4\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+48        </provider>
+49    </application>
+50
+51</manifest>
